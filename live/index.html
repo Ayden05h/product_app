@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Product App (Live)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+  <body>
+    <main class="container" x-data="liveApp()">
+      <h1>Product App — Live Demo</h1>
+
+      <section class="controls">
+        <button @click="loadProducts">Load products</button>
+        <div class="counter">Counter: <strong x-text="count"></strong></div>
+        <button @click="count++">+1</button>
+      </section>
+
+      <section class="products">
+        <ul>
+          <template x-for="p in products" :key="p.id">
+            <li class="product">
+              <span class="name" x-text="p.name"></span>
+              <span class="price">$<span x-text="p.price.toFixed(2)"></span></span>
+            </li>
+          </template>
+        </ul>
+      </section>
+
+      <section class="comments">
+        <h2>Comments (local)</h2>
+        <button @click="showForm = !showForm">Toggle comment form</button>
+
+        <div x-show="showForm" style="margin-top:0.5rem">
+          <input x-model="commentName" placeholder="Your name" />
+          <br />
+          <textarea x-model="commentText" placeholder="Write a comment" rows="3"></textarea>
+          <br />
+          <button @click="postComment">Post comment</button>
+        </div>
+
+        <div style="margin-top:1rem">
+          <template x-if="comments.length === 0">
+            <div class="muted">No comments yet</div>
+          </template>
+
+          <template x-for="c in comments" :key="c.id">
+            <div class="comment">
+              <div class="meta"><strong x-text="c.name"></strong> — <small x-text="new Date(c.created_at).toLocaleString()"></small></div>
+              <div class="text" x-text="c.text"></div>
+            </div>
+          </template>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

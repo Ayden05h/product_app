@@ -1,0 +1,13 @@
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; margin: 0; padding: 2rem; background: #f7fafc; color: #111827 }
+.container { max-width: 800px; margin: 0 auto; background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 6px 18px rgba(2,6,23,0.08) }
+.controls { display:flex; gap:1rem; align-items:center; margin-bottom:1rem }
+.products ul { list-style: none; padding: 0 }
+.product { display:flex; justify-content:space-between; padding:0.5rem 0; border-bottom:1px solid #eef2f7 }
+.loading { color: #6b7280 }
+
+.comments { margin-top:1.25rem }
+.comment { padding:0.5rem 0; border-bottom:1px solid #eef2f7 }
+.comment .meta { color:#374151; font-size:0.9rem }
+.comment .text { margin-top:0.25rem }
+.muted { color:#6b7280 }
+

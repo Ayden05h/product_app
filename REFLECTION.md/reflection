@@ -1,0 +1,10 @@
+What did you ask Copilot to help you build? #I asked copilot to help me build a product review web application using Flask and SQLite.
+How did you break down the problem? #I broke down the problem into smaller tasks such as setting up the Flask environment, creating the database schema, building the backend routes, and designing the frontend interface.
+![Copilot Suggestion](images/githubplan.png)
+
+How did your approach to asking questions change as you worked? #Initially, I asked broad questions about setting up Flask and SQLite. As I progressed, I started asking more specific questions related to implementing features like a comment button, and making it so i can use my live server extension for the website
+![Copilot Suggestion](images/liveserver.png)
+What parts of the development process with GitHub Copilot surprised you? #I was surprised by how well Copilot could generate code snippets that were relevant to my project. It was able to understand the context of my code and provide suggestions that turned very complex and happened in an instant.
+![Copilot Suggestion](images/complex.png)
+What did you learn about the technology you used that you didn't know before? #I learned how even more advanced it is, when you think of something like copilot you think its advanced but not this advanced. The way it was able to take what I said and generate it that fast with a single thought was mind blowing. 
+What would you do differently if you had to build this again? #If I had to build this again, I would probably spend even more time planning the website like what else could I add and how advance can I get this program?
